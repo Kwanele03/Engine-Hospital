@@ -10,9 +10,6 @@ public class Hospital {
         Nurses nurse = new Nurses(22175678, "Rebecca Nadioo","Labour and Operations Dep.","2022-02-10", 600, "Rebecca@2217");
     
         
-        doctor.work();
-        System.out.println();
-        nurse.work();
 	}
 
 }
