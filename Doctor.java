@@ -1,15 +1,11 @@
 
 import java.util.Scanner;
-
 import Interface_Implementation.Staff;
 
 public class Doctor extends Staff{
 	
-
-	
 	Doctor(int iD, String fullName,  String derpartment, String experience, double salary, String password){
 		super(iD, fullName, derpartment,experience, salary, password );
-	
 	}
 	
 	@Override
@@ -42,14 +38,12 @@ public class Doctor extends Staff{
  	
 	}
  
-	
 	@Override
 	public void login() {
 		this.getID();
 		this.getPassword();
        
         Scanner scanner = new Scanner(System.in);
-
         while (true) {
         	
            System.out.print("Enter Your ID: ");
@@ -67,7 +61,6 @@ public class Doctor extends Staff{
                System.out.println("Incorrect ID or password. Try again.");
            }   
        }
-
    }
 	
 
