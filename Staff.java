@@ -1,5 +1,4 @@
 package Interface_Implementation;
-
 import java.time.LocalDate;
 import java.util.Scanner;
 import Interfaces.StaffInterface;
@@ -15,7 +14,6 @@ public class Staff implements StaffInterface {
 
 
 	public Staff(int iD, String fullName,  String derpatment, String experience, double salary, String password){
-
 		this.iD = iD;
 		this.fullName = fullName;
 		this.derpatment = derpatment;
@@ -28,7 +26,6 @@ public class Staff implements StaffInterface {
 	public void login() {
 		this.getID();
 		this.getPassword();
-       
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
@@ -52,13 +49,9 @@ public class Staff implements StaffInterface {
        scanner.close();
    }
 	
-	
-   
-
 	public int getID() {
 		return this.iD;
 	}
-
 
 	public String getName() {
 		return this.fullName;
@@ -88,9 +81,7 @@ public class Staff implements StaffInterface {
 		return this.password;
 	}
 	
-	public void work() {
+	public void work(){
 		
 	}
-	
-
 }
