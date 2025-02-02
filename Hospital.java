@@ -2,8 +2,6 @@
 public class Hospital {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		
 	Managers manager = new Managers(22174375, "Kwanele Ntshele", "Leadership and Management", "2019-02-17", 2200, "Kwanele@2217");
         Doctor doctor = new Doctor(22003412, "Dr David Jones", "Health Dep and Operations", "2021-02-17", 2550, "David@2200");
@@ -24,8 +22,6 @@ public class Hospital {
         nurse.login();
         System.out.printf("Your Staff ID is %d and you are is %s. You work under %s Derpartment for %s years. Annual salary is R%f \n", nurse.getID(), nurse.getName(), nurse.getDepartment(), nurse.calculateExperience(),nurse.getSalary());
         System.out.println();
-        
 
 	}
-
 }
